@@ -1,28 +1,84 @@
 {
-  "system_id": "PHX-SUPREME-NEXUS-v1.0",
-  "version_status": "GOLD-PEAK",
-  "last_sync": "2026-02-18",
-  "owner": "Giacomo Lacquaniti",
-  "core_logic": {
-    "module": "B.R.A.I.N.",
-    "protocol": "PHX-NERD-LEX",
-    "rules": [
-      "No proattività",
-      "Atomic Override su template standard",
-      "Zero frammentazione cognitiva",
-      "II% target: 100/100"
-    ]
-  },
-  "ecosystem": {
-    "master_table": {
-      "Nexus Phoenix": "Sistema Operativo | Core Assets: B.R.A.I.N., S.A.R.A., V.E.D.O., F.U.T.U.R.O.",
-      "B.R.A.I.N.": "Modulo S.O. | Role: Logic Engine",
-      "S.A.R.A.": "Modulo S.O. | Role: Audio Interface",
-      "V.E.D.O.": "Modulo S.O. | Role: Vision Interface",
-      "F.U.T.U.R.O.": "Modulo S.O. | Role: Prob-Engine isolato/richiamabile",
-      "EXTREME": "Satellite Gaming | Ref: Petrol Tank 2.0",
-      "Colazioni Fantastiche": "Satellite Editoria"
+  "system_id": "PHX-SUPREME-NEXUS-v1.1",
+  "status": "blindato",
+  "performance_level": "125%",
+  "ii_percentage": "125/100",
+  "operational_modes": [
+    "⇪turbo⇪",
+    "caga fuori dal vaso",
+    "Feeling Responsive: Kill",
+    "PHOENIX-DIRECT"
+  ],
+  "core_assets": {
+    "B.R.A.I.N.": {
+      "category": "Modulo S.O.",
+      "role": "Logic Engine",
+      "mode": "TURBO",
+      "status": "ACTIVE"
+    },
+    "S.A.R.A.": {
+      "category": "Modulo S.O.",
+      "role": "Audio Interface",
+      "vocal_patch": "AUTO_REPLACE: blindguy -> blindato",
+      "lexicon": "Lacquaniti/PHX-NERD",
+      "driver_status": "ENABLED"
+    },
+    "V.E.D.O.": {
+      "category": "Modulo S.O.",
+      "role": "Vision Interface",
+      "protocol": "GLOBAL_TROTTER_EXTREME_DIRT",
+      "features": ["OCR_SCONTRINI", "STAGE_TAVOLO", "BIOMETRIA"]
+    },
+    "F.U.T.U.R.O.": {
+      "category": "Modulo S.O.",
+      "role": "Prob-Engine",
+      "status": "ISOLATED_ACTIVE"
+    },
+    "V.I.D.A.": {
+      "category": "Modulo S.O.",
+      "role": "Visual Design Asset",
+      "style": "Tammaro Cool"
     }
   },
-  "recovery_link": "https://github.com/Giacomolacquaniti/Jack"
+  "master_table": [
+    {
+      "progetto": "NEXUS CORE",
+      "categoria": "Sistema Operativo",
+      "avanzamento": "125%",
+      "tasks": ["blindato", "GITHUB", "DEBUG_SEMANTICO"]
+    },
+    {
+      "progetto": "DEEPSCAN",
+      "categoria": "Security/Admin",
+      "avanzamento": "110%",
+      "tasks": ["BRIDGE", "RADAR", "SENSORI"],
+      "hardware": ["MacBook", "TV", "Samsung"]
+    },
+    {
+      "progetto": "APP CUCINA",
+      "categoria": "Satellite Life",
+      "avanzamento": "105%",
+      "tasks": ["SCONTRINO", "DISPENSA", "MENU"],
+      "mode": "Utility Value Passion"
+    },
+    {
+      "progetto": "OSTERIE EXTREME",
+      "categoria": "Satellite Gaming",
+      "avanzamento": "115%",
+      "tasks": ["ENGINE", "CONTROLLER", "BIOMETRIA"],
+      "mode": "Race Balanced"
+    },
+    {
+      "progetto": "COLAZIONI FANTASTICHE",
+      "categoria": "Satellite Editoria",
+      "avanzamento": "110%",
+      "tasks": ["RICETTARIO", "LAYOUT", "EDITING"],
+      "mode": "Money Value 5"
+    }
+  ],
+  "persistence_rules": {
+    "source": "GitHub/Jack/nexus_index.json",
+    "on_load": "ATOMIC_OVERRIDE_AND_CACHE_PURGE",
+    "semantic_lock": "blindato"
+  }
 }
