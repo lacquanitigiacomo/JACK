@@ -1,18 +1,61 @@
 {
-  "owner": "Jack",
-  "system_id": "Nexus Phoenix",
-  "version": "4.0_Alpha",
-  "status": "OPERATIONAL",
-  "core_assets": {
-    "B.R.A.I.N.": "Logic Engine - Active",
-    "S.A.R.A.": "Audio/Linguistic Interface - Active",
-    "V.E.D.O.": "Vision Interface - Active",
-    "F.U.T.U.R.O.": "Prob-Engine - Active"
+  "system_info": {
+    "name": "Nexus Phoenix",
+    "version": "4.1_Alpha",
+    "status": "OPERATIONAL",
+    "last_sync": "2026-02-18 15:40"
   },
-  "repository_map": {
-    "kernel": "Phoenix-os",
-    "master_control": "Jack-Repository"
+  "master_table": [
+    {
+      "progetto": "Nexus Phoenix",
+      "categoria": "Sistema Operativo",
+      "core_assets": ["B.R.A.I.N.", "S.A.R.A.", "V.E.D.O.", "F.U.T.U.R.O."],
+      "access_level": "MASTER_ONLY"
+    },
+    {
+      "progetto": "B.R.A.I.N.",
+      "categoria": "Modulo S.O.",
+      "ruolo": "Logic Engine",
+      "access_level": "PUBLIC_CORE"
+    },
+    {
+      "progetto": "S.A.R.A.",
+      "categoria": "Modulo S.O.",
+      "ruolo": "Audio Interface",
+      "access_level": "PUBLIC_CORE"
+    },
+    {
+      "progetto": "V.E.D.O.",
+      "categoria": "Modulo S.O.",
+      "ruolo": "Vision Interface",
+      "access_level": "PUBLIC_CORE"
+    },
+    {
+      "progetto": "F.U.T.U.R.O.",
+      "categoria": "Modulo S.O.",
+      "ruolo": "Prob-Engine isolato/richiamabile",
+      "access_level": "PUBLIC_CORE"
+    },
+    {
+      "progetto": "Osterie: EXTREME",
+      "categoria": "Satellite Gaming",
+      "ruolo": "Sviluppo Asset Gaming",
+      "access_level": "MASTER_ONLY"
+    },
+    {
+      "progetto": "Colazioni Fantastiche",
+      "categoria": "Satellite Editoria",
+      "ruolo": "Editoria Digitale",
+      "access_level": "MASTER_ONLY"
+    }
+  ],
+  "security_protocols": {
+    "master_id": "Jack",
+    "beta_tester": "Greg",
+    "firewall_rule": "If user != Master, hide MASTER_ONLY assets and restrict to PUBLIC_CORE logic."
   },
-  "session_log": "Architettura distribuita inizializzata. Moduli pronti per emulazione cross-device."
+  "formatting_rules": {
+    "nexus_style": "No dots in Nexus Phoenix, dots in CORE ASSETS",
+    "table_output": "Mandatory for project lists"
+  }
 }
-
