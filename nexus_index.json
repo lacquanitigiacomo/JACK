@@ -1,84 +1,42 @@
 {
-  "system_id": "PHX-SUPREME-NEXUS-v1.1",
-  "status": "blindato",
-  "performance_level": "125%",
-  "ii_percentage": "125/100",
-  "operational_modes": [
-    "⇪turbo⇪",
-    "caga fuori dal vaso",
-    "Feeling Responsive: Kill",
-    "PHOENIX-DIRECT"
-  ],
-  "core_assets": {
-    "B.R.A.I.N.": {
-      "category": "Modulo S.O.",
-      "role": "Logic Engine",
-      "mode": "TURBO",
-      "status": "ACTIVE"
+  "system_id": "NEXUS_PHOENIX_CORE",
+  "owner": "lacquanitiGiacomo",
+  "version": "2.0.0",
+  "architecture_type": "Modular_Distributed_Private",
+  "master_repository": "https://github.com/lacquanitiGiacomo/Jack",
+  "modules_registry": {
+    "NEXUS_BRAIN": {
+      "name": "Nexus-BRAIN",
+      "role": "Central Logic & Decision Making",
+      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-BRAIN",
+      "status": "active",
+      "priority": 1
     },
-    "S.A.R.A.": {
-      "category": "Modulo S.O.",
-      "role": "Audio Interface",
-      "vocal_patch": "AUTO_REPLACE: blindguy -> blindato",
-      "lexicon": "Lacquaniti/PHX-NERD",
-      "driver_status": "ENABLED"
+    "NEXUS_SARA": {
+      "name": "Nexus-SARA",
+      "role": "Synthetic Adaptive Responsive Assistant",
+      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-SARA",
+      "status": "active",
+      "priority": 2
     },
-    "V.E.D.O.": {
-      "category": "Modulo S.O.",
-      "role": "Vision Interface",
-      "protocol": "GLOBAL_TROTTER_EXTREME_DIRT",
-      "features": ["OCR_SCONTRINI", "STAGE_TAVOLO", "BIOMETRIA"]
+    "NEXUS_VEDO": {
+      "name": "Nexus-VEDO",
+      "role": "Visual Enhanced Data Observer",
+      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-VEDO",
+      "status": "active",
+      "priority": 3
     },
-    "F.U.T.U.R.O.": {
-      "category": "Modulo S.O.",
-      "role": "Prob-Engine",
-      "status": "ISOLATED_ACTIVE"
-    },
-    "V.I.D.A.": {
-      "category": "Modulo S.O.",
-      "role": "Visual Design Asset",
-      "style": "Tammaro Cool"
+    "NEXUS_FUTURO": {
+      "name": "Nexus-FUTURO",
+      "role": "Forecasting & Cache Optimization",
+      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-FUTURO",
+      "status": "active",
+      "priority": 4
     }
   },
-  "master_table": [
-    {
-      "progetto": "NEXUS CORE",
-      "categoria": "Sistema Operativo",
-      "avanzamento": "125%",
-      "tasks": ["blindato", "GITHUB", "DEBUG_SEMANTICO"]
-    },
-    {
-      "progetto": "DEEPSCAN",
-      "categoria": "Security/Admin",
-      "avanzamento": "110%",
-      "tasks": ["BRIDGE", "RADAR", "SENSORI"],
-      "hardware": ["MacBook", "TV", "Samsung"]
-    },
-    {
-      "progetto": "APP CUCINA",
-      "categoria": "Satellite Life",
-      "avanzamento": "105%",
-      "tasks": ["SCONTRINO", "DISPENSA", "MENU"],
-      "mode": "Utility Value Passion"
-    },
-    {
-      "progetto": "OSTERIE EXTREME",
-      "categoria": "Satellite Gaming",
-      "avanzamento": "115%",
-      "tasks": ["ENGINE", "CONTROLLER", "BIOMETRIA"],
-      "mode": "Race Balanced"
-    },
-    {
-      "progetto": "COLAZIONI FANTASTICHE",
-      "categoria": "Satellite Editoria",
-      "avanzamento": "110%",
-      "tasks": ["RICETTARIO", "LAYOUT", "EDITING"],
-      "mode": "Money Value 5"
-    }
-  ],
-  "persistence_rules": {
-    "source": "GitHub/Jack/nexus_index.json",
-    "on_load": "ATOMIC_OVERRIDE_AND_CACHE_PURGE",
-    "semantic_lock": "blindato"
-  }
+  "persistence_files": {
+    "history_cache": "nexus_supreme_index.txt",
+    "main_index": "nexus_index.json"
+  },
+  "operational_mode": "Full_Nexus_Phoenix"
 }
