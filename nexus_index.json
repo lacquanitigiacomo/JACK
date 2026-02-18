@@ -1,70 +1,55 @@
 {
-  "project_name": "Nexus Phoenix",
-  "protocol": "blindato",
-  "status": "PHOENIX-DIRECT",
-  "last_update": "2026-02-18",
-  "core_os": {
-    "version": "v1.0",
-    "modules": {
-      "S.A.R.A.": {
-        "function": "Interfaccia Vocale & Linguistica",
-        "voice_engine": "ACTIVE",
-        "recognition_status": "WAITING_FOR_CALIBRATION",
-        "tasks": ["blindato", "SCONTRINO", "RICETTARIO"]
-      },
-      "V.E.D.O.": {
-        "function": "Vision Interface",
-        "status": "OPERATIONAL",
-        "tasks": ["SCONTRINO", "BIOMETRIA"]
-      },
-      "L.O.G.I.C.": {
-        "function": "Procedimenti & Coerenza",
-        "status": "OFFLINE_FOR_DEBUG",
-        "bug_report": "DEBUG SEMANTICO - Sostituzione termini obsoleti"
-      }
+  "system_id": "PHX-SUPREME-NEXUS-v1.0",
+  "last_sync": "2026-02-18",
+  "ii_status": "100/100",
+  "protocol": "PHOENIX OS ACTIVE",
+  "core_assets": {
+    "B.R.A.I.N.": {
+      "category": "Modulo S.O.",
+      "role": "Logic Engine",
+      "status": "Active / Core Driver",
+      "optimization_level": "Symbiotic Logic v2.0",
+      "priority": "P1"
     },
-    "security": {
-      "protocol_name": "blindato",
-      "target": "GITHUB",
-      "encryption": "ACTIVE"
+    "S.A.R.A.": {
+      "category": "Modulo S.O.",
+      "role": "Audio Interface",
+      "status": "Active / Real-Time Mapping",
+      "optimization_level": "Zero-Latency-Response",
+      "priority": "P2"
+    },
+    "V.E.D.O.": {
+      "category": "Modulo S.O.",
+      "role": "Vision Interface",
+      "status": "Active / Asset Interpreter",
+      "optimization_level": "Deep-Vision-Scan",
+      "priority": "P3"
+    },
+    "F.U.T.U.R.O.": {
+      "category": "Modulo S.O.",
+      "role": "Prob-Engine",
+      "status": "Standby / Predictive Mode",
+      "optimization_level": "Isolated-Scenario-Compute",
+      "priority": "P2"
     }
   },
-  "project_map": [
+  "satellites": [
     {
-      "name": "NEXUS CORE",
-      "scope": "Sistema Operativo",
-      "advance": "85%",
-      "tasks": ["blindato", "GITHUB", "DEBUG SEMANTICO"]
+      "name": "EXTREME",
+      "category": "Satellite Gaming",
+      "status": "Connected / Live",
+      "integration_level": "Full"
     },
     {
-      "name": "DEEPSCAN",
-      "scope": "Admin & Network",
-      "advance": "50%",
-      "tasks": ["BRIDGE", "RADAR", "SENSORI"]
-    },
-    {
-      "name": "APP CUCINA",
-      "scope": "Life Solutions",
-      "advance": "38%",
-      "tasks": ["SCONTRINO", "DISPENSA", "MENU"]
-    },
-    {
-      "name": "OSTERIE XTREME",
-      "scope": "Entertainment",
-      "advance": "28%",
-      "tasks": ["ENGINE", "CONTROLLER", "BIOMETRIA"]
-    },
-    {
-      "name": "COLAZIONI FANTASTICHE",
-      "scope": "Publishing",
-      "advance": "26%",
-      "tasks": ["RICETTARIO", "LAYOUT", "EDITING"]
+      "name": "Colazioni Fantastiche",
+      "category": "Satellite Editoria",
+      "status": "Connected / Live",
+      "integration_level": "Full"
     }
   ],
-  "voice_module_patch": {
-    "target": "S.A.R.A.",
-    "error_scenario": "blindguy_to_blindato",
-    "action": "AUTO_REPLACE",
-    "priority": "CRITICAL"
+  "logic_flow": {
+    "advancement_rule": "Module-Driven Kernel Evolution",
+    "persistence_source": "GitHub / Jack Repository",
+    "override_status": "Atomic Override Active"
   }
 }
