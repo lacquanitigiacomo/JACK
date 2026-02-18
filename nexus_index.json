@@ -1,42 +1,28 @@
 {
-  "project": "Nexus Phoenix",
-  "version": "1.1-SUPREME-MUSEO",
-  "system_status": "ACTIVE",
-  "core_assets": {
-    "B.R.A.I.N.": {
-      "category": "Modulo S.O.",
-      "role": "Logic Engine"
-    },
-    "S.A.R.A.": {
-      "category": "Modulo S.O.",
-      "role": "Audio Interface"
-    },
-    "V.E.D.O.": {
-      "category": "Modulo S.O.",
-      "role": "Vision Interface"
-    },
-    "F.U.T.U.R.O.": {
-      "category": "Modulo S.O.",
-      "role": "Prob-Engine"
+  "system_id": "PHX-SUPREME-NEXUS-v1.0",
+  "version_status": "GOLD-PEAK",
+  "last_sync": "2026-02-18",
+  "owner": "Giacomo Lacquaniti",
+  "core_logic": {
+    "module": "B.R.A.I.N.",
+    "protocol": "PHX-NERD-LEX",
+    "rules": [
+      "No proattività",
+      "Atomic Override su template standard",
+      "Zero frammentazione cognitiva",
+      "II% target: 100/100"
+    ]
+  },
+  "ecosystem": {
+    "master_table": {
+      "Nexus Phoenix": "Sistema Operativo | Core Assets: B.R.A.I.N., S.A.R.A., V.E.D.O., F.U.T.U.R.O.",
+      "B.R.A.I.N.": "Modulo S.O. | Role: Logic Engine",
+      "S.A.R.A.": "Modulo S.O. | Role: Audio Interface",
+      "V.E.D.O.": "Modulo S.O. | Role: Vision Interface",
+      "F.U.T.U.R.O.": "Modulo S.O. | Role: Prob-Engine isolato/richiamabile",
+      "EXTREME": "Satellite Gaming | Ref: Petrol Tank 2.0",
+      "Colazioni Fantastiche": "Satellite Editoria"
     }
   },
-  "satellites": [
-    {
-      "id": "PHX_MUSEO_01",
-      "name": "Museo Phoenix",
-      "category": "Data Archive",
-      "logs_repository": "PHX_MUSEO_RECOVERY.txt",
-      "status": "Linked_and_Operational"
-    },
-    {
-      "id": "OST_EXT_01",
-      "name": "Osterie: EXTREME",
-      "category": "Satellite Gaming"
-    },
-    {
-      "id": "COL_FAN_01",
-      "name": "Colazioni Fantastiche",
-      "category": "Satellite Editoria"
-    }
-  ]
+  "recovery_link": "https://github.com/Giacomolacquaniti/Jack"
 }
