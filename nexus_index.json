@@ -1,42 +1,42 @@
 {
-  "system_id": "NEXUS_PHOENIX_CORE",
-  "owner": "lacquanitiGiacomo",
-  "version": "2.0.0",
-  "architecture_type": "Modular_Distributed_Private",
-  "master_repository": "https://github.com/lacquanitiGiacomo/Jack",
+  "system_id": "nexus_phoenix_core",
+  "owner": "lacquanitigiacomo",
+  "version": "2.3.1",
+  "architecture_type": "modular_distributed_private",
+  "master_repository": "https://github.com/lacquanitigiacomo/jack",
   "modules_registry": {
-    "NEXUS_BRAIN": {
-      "name": "Nexus-BRAIN",
-      "role": "Central Logic & Decision Making",
-      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-BRAIN",
+    "nexus_brain": {
+      "name": "nexus-brain",
+      "repo_url": "https://github.com/lacquanitigiacomo/nexus-brain",
       "status": "active",
-      "priority": 1
+      "priority": 1,
+      "config_files": ["readme.md", "logic_map.md"]
     },
-    "NEXUS_SARA": {
-      "name": "Nexus-SARA",
-      "role": "Synthetic Adaptive Responsive Assistant",
-      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-SARA",
+    "nexus_sara": {
+      "name": "nexus-sara",
+      "repo_url": "https://github.com/lacquanitigiacomo/nexus-sara",
       "status": "active",
-      "priority": 2
+      "priority": 2,
+      "config_files": ["readme.md", "logic_map.md"]
     },
-    "NEXUS_VEDO": {
-      "name": "Nexus-VEDO",
-      "role": "Visual Enhanced Data Observer",
-      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-VEDO",
+    "nexus_vedo": {
+      "name": "nexus-vedo",
+      "repo_url": "https://github.com/lacquanitigiacomo/nexus-vedo",
       "status": "active",
-      "priority": 3
+      "priority": 3,
+      "config_files": ["readme.md", "logic_map.md"]
     },
-    "NEXUS_FUTURO": {
-      "name": "Nexus-FUTURO",
-      "role": "Forecasting & Cache Optimization",
-      "repo_url": "https://github.com/lacquanitiGiacomo/Nexus-FUTURO",
+    "nexus_futuro": {
+      "name": "nexus-futuro",
+      "repo_url": "https://github.com/lacquanitigiacomo/nexus-futuro",
       "status": "active",
-      "priority": 4
+      "priority": 4,
+      "config_files": ["readme.md", "logic_map.md"]
     }
   },
   "persistence_files": {
     "history_cache": "nexus_supreme_index.txt",
     "main_index": "nexus_index.json"
   },
-  "operational_mode": "Full_Nexus_Phoenix"
+  "operational_mode": "full_nexus_phoenix"
 }
