@@ -1,61 +1,70 @@
 {
-  "system_info": {
-    "name": "Nexus Phoenix",
-    "version": "4.1_Alpha",
-    "status": "OPERATIONAL",
-    "last_sync": "2026-02-18 15:40"
+  "project_name": "Nexus Phoenix",
+  "protocol": "blindato",
+  "status": "PHOENIX-DIRECT",
+  "last_update": "2026-02-18",
+  "core_os": {
+    "version": "v1.0",
+    "modules": {
+      "S.A.R.A.": {
+        "function": "Interfaccia Vocale & Linguistica",
+        "voice_engine": "ACTIVE",
+        "recognition_status": "WAITING_FOR_CALIBRATION",
+        "tasks": ["blindato", "SCONTRINO", "RICETTARIO"]
+      },
+      "V.E.D.O.": {
+        "function": "Vision Interface",
+        "status": "OPERATIONAL",
+        "tasks": ["SCONTRINO", "BIOMETRIA"]
+      },
+      "L.O.G.I.C.": {
+        "function": "Procedimenti & Coerenza",
+        "status": "OFFLINE_FOR_DEBUG",
+        "bug_report": "DEBUG SEMANTICO - Sostituzione termini obsoleti"
+      }
+    },
+    "security": {
+      "protocol_name": "blindato",
+      "target": "GITHUB",
+      "encryption": "ACTIVE"
+    }
   },
-  "master_table": [
+  "project_map": [
     {
-      "progetto": "Nexus Phoenix",
-      "categoria": "Sistema Operativo",
-      "core_assets": ["B.R.A.I.N.", "S.A.R.A.", "V.E.D.O.", "F.U.T.U.R.O."],
-      "access_level": "MASTER_ONLY"
+      "name": "NEXUS CORE",
+      "scope": "Sistema Operativo",
+      "advance": "85%",
+      "tasks": ["blindato", "GITHUB", "DEBUG SEMANTICO"]
     },
     {
-      "progetto": "B.R.A.I.N.",
-      "categoria": "Modulo S.O.",
-      "ruolo": "Logic Engine",
-      "access_level": "PUBLIC_CORE"
+      "name": "DEEPSCAN",
+      "scope": "Admin & Network",
+      "advance": "50%",
+      "tasks": ["BRIDGE", "RADAR", "SENSORI"]
     },
     {
-      "progetto": "S.A.R.A.",
-      "categoria": "Modulo S.O.",
-      "ruolo": "Audio Interface",
-      "access_level": "PUBLIC_CORE"
+      "name": "APP CUCINA",
+      "scope": "Life Solutions",
+      "advance": "38%",
+      "tasks": ["SCONTRINO", "DISPENSA", "MENU"]
     },
     {
-      "progetto": "V.E.D.O.",
-      "categoria": "Modulo S.O.",
-      "ruolo": "Vision Interface",
-      "access_level": "PUBLIC_CORE"
+      "name": "OSTERIE XTREME",
+      "scope": "Entertainment",
+      "advance": "28%",
+      "tasks": ["ENGINE", "CONTROLLER", "BIOMETRIA"]
     },
     {
-      "progetto": "F.U.T.U.R.O.",
-      "categoria": "Modulo S.O.",
-      "ruolo": "Prob-Engine isolato/richiamabile",
-      "access_level": "PUBLIC_CORE"
-    },
-    {
-      "progetto": "Osterie: EXTREME",
-      "categoria": "Satellite Gaming",
-      "ruolo": "Sviluppo Asset Gaming",
-      "access_level": "MASTER_ONLY"
-    },
-    {
-      "progetto": "Colazioni Fantastiche",
-      "categoria": "Satellite Editoria",
-      "ruolo": "Editoria Digitale",
-      "access_level": "MASTER_ONLY"
+      "name": "COLAZIONI FANTASTICHE",
+      "scope": "Publishing",
+      "advance": "26%",
+      "tasks": ["RICETTARIO", "LAYOUT", "EDITING"]
     }
   ],
-  "security_protocols": {
-    "master_id": "Jack",
-    "beta_tester": "Greg",
-    "firewall_rule": "If user != Master, hide MASTER_ONLY assets and restrict to PUBLIC_CORE logic."
-  },
-  "formatting_rules": {
-    "nexus_style": "No dots in Nexus Phoenix, dots in CORE ASSETS",
-    "table_output": "Mandatory for project lists"
+  "voice_module_patch": {
+    "target": "S.A.R.A.",
+    "error_scenario": "blindguy_to_blindato",
+    "action": "AUTO_REPLACE",
+    "priority": "CRITICAL"
   }
 }
